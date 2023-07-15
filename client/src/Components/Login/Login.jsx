@@ -31,6 +31,7 @@ const Login = () => {
           })
 
           const json = response.json()
+          localStorage.setItem("token", json.token)
           console.log(json)
           alert("hello ther")
         }}>SUBMIT</button>
