@@ -30,7 +30,7 @@ const Login = () => {
             })
           })
 
-          const json = response.json()
+          const json = await response.json()
           localStorage.setItem("token", json.token)
           console.log(json)
           alert("hello ther")
