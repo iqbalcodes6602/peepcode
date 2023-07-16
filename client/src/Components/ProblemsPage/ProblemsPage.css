@@ -4,7 +4,8 @@
     align-items: flex-start;
 }
 
-.ques , .code {
+.ques,
+.code {
     width: 50%;
     min-height: 65vh;
     margin: 0;
@@ -18,13 +19,14 @@
     height: 70vh;
 }
 
-textarea , pre {
+textarea,
+pre {
     width: 100%;
     height: 100%;
     font-size: 1.3rem;
-    -moz-tab-size : 4;
-      -o-tab-size : 4;
-         tab-size : 4;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
 }
 
 button {
@@ -38,6 +40,7 @@ button {
 #test {
     background-color: gray;
 }
+
 #submit {
     background-color: rgb(68, 207, 68);
 }
