@@ -104,8 +104,8 @@ function App() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/login" element={<Login />} />
-                <Route path="/problemset/all/" element={<AllProblems problems={problems} />} />
-                <Route path="/problems/:pid/" element={<ProblemsPage problems={problems} />} />
+                <Route path="/problemset/all/" element={<AllProblems />} />
+                <Route path="/problems/:pid/" element={<ProblemsPage />} />
                 <Route path="*" element={<div>404 Not Found</div>} />
             </Routes>
         </BrowserRouter>
