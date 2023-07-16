@@ -106,7 +106,7 @@ function App() {
                 <Route path="/login" element={<Login />} />
                 <Route path="/problemset/all/" element={<AllProblems />} />
                 <Route path="/problems/:pid/" element={<ProblemsPage />} />
-                <Route path="*" element={<div>404 Not Found</div>} />
+                <Route path="*" element={<div><h1>404 Not Found</h1></div>} />
             </Routes>
         </BrowserRouter>
     // <div>
