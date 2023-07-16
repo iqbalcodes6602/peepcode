@@ -4,7 +4,25 @@ import { useParams } from 'react-router-dom'
 import "./ProblemsPage.css"
 
 
-const ProblemsPage = ({ problems }) => {
+const ProblemsPage = () => {
+
+  const [problems, setProblems] = useState([])
+
+  const init = async () => {
+    const response = await fetch(
+      "http://localhost:3000/problems", {
+      method: "GET",
+    })
+    const json = await response.json()
+    setProblems(json.problems)
+    console.log(json.problems)
+  }
+
+  useEffect(() => {
+    init()
+  }, [])
+
+
   const [CodeSeg, setCodeSeg] = useState("");
   const { pid } = useParams();
   const cleanId = pid.substring(1);
