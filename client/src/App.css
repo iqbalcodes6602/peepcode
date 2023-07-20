@@ -5,11 +5,18 @@ font-family: 'Prompt', sans-serif;
 font-family: 'Sacramento', cursive; 
 */
 
-h1 , h2 , h3 , h4 , h5 , h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
 }
-p , a {
+
+p,
+a {
   font-family: 'Prompt', sans-serif
 }
 
@@ -32,7 +39,7 @@ p , a {
   height: 40px;
 }
 
-a , Link {
+a,
+Link {
   text-decoration: none;
 }
-

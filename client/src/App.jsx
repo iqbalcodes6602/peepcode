@@ -1,4 +1,4 @@
-import { BrowserRouter , Routes , Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import HomePage from "./Components/HomePage/HomePage"
 import AllProblems from "./Components/AllProblems/AllProblems";
@@ -109,10 +109,10 @@ function App() {
                 <Route path="*" element={<div><h1>404 Not Found</h1></div>} />
             </Routes>
         </BrowserRouter>
-    // <div>
-    //     Finish the assignment! Look at the comments in App.jsx as a starting point
-    // </div>
-  )
+        // <div>
+        //     Finish the assignment! Look at the comments in App.jsx as a starting point
+        // </div>
+    )
 }
 
 export default App
