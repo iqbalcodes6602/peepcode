@@ -6,12 +6,28 @@ import "./ProblemsPage.css"
 
 const ProblemsPage = () => {
 
+  const [problems, setProblems] = useState([])
+
+  const init = async () => {
+    const response = await fetch(
+      "http://localhost:3000/problems", {
+      method: "GET",
+    })
+    const json = await response.json()
+    setProblems(json.problems)
+    console.log(json.problems)
+  }
+
+  useEffect(() => {
+    init()
+  }, [])
+
 
   const [CodeSeg, setCodeSeg] = useState("");
   const { pid } = useParams();
   const cleanId = pid.substring(1);
 
-  console.log(cleanId) ;
+  // console.log(cleanId) ;
 
   const found = problems.find((prob) => {
     return prob.problemId === cleanId;
@@ -28,22 +44,6 @@ const ProblemsPage = () => {
     }
     setCodeSeg(event.value);
   }
-
-  const [problems, setProblems] = useState([])
-
-  const init = async () => {
-    const response = await fetch(
-      "http://localhost:3000/problems", {
-      method: "GET",
-    })
-    const json = await response.json()
-    setProblems(json.problems)
-    console.log(json.problems)
-  }
-
-  useEffect(() => {
-    init()
-  }, [])
 
   return (
     <div>
