@@ -16,10 +16,10 @@ const Navbar = () => {
         <Link to={'/problemset/all/'} >Problems</Link>
       </div>
       <div className="nav-options">
-        <Link to={'/signup'} >Signup</Link>
+        <Link to={'/signup'} >SignUp</Link>
       </div>
       <div className="nav-options">
-        <Link to={'/login'} >Login</Link>
+        <Link to={'/login'} >SignIn</Link>
       </div>
     </div>
   )
